@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Hi there! It looks like you're interested in visiting ancient Greece! Get started by clicking the button below.';
+var txt = 'Hi there! It looks like you are interested in visiting ancient Greece! Get started by clicking the button below.';
 var speed = 100;
 
 function typeWriter() {
