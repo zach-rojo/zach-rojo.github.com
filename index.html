@@ -27,8 +27,10 @@ function typeWriter() {
   }
 }
 function writeThis() {
-  document.getElementById('intro-text').innerHTML = ' ';
-  typeWriter();
+  if document.getElementById('intro-text').innerHTML == 'Hover over this text to begin.'{
+    document.getElementById('intro-text').innerHTML = ' ';
+    typeWriter();
+  }
 }
   </script>
 </html>
