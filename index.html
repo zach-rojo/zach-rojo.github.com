@@ -1,9 +1,50 @@
-<html style='background-image: url(https://cdn.pixabay.com/photo/2016/08/15/08/22/greece-1594689__340.jpg); background-size: 100%; background-repeat: no-repeat'>
-  <link rel='stylesheet' href='styles.css'>
-  <title>Visit Greece</title>
-  <body>
+<html id = 'homePage' style = 'background-image: url(rocket1.jpg); background-size: 100%; background-repeat: no-repeat' onresize = 'holdPose()'>
+    <head>
+      <title>Gimbal Rocketry | Homemade Model Rockets | Rocket Kits</title>
+    </head>
+<body>
     <center>
-      <h1 class='intro'>Visit Greece now with Time Travel Deluxe!</h1>
-    </center>
-  </body>
+    <br><br><br><br>
+    <h1 id = 'b' style = 'color: white; font-size: 500%'>Model Rocketry made Easy.</h1>
+    <h1 id = 'c' style = 'font-size: 300%; color: white'>Parts. Kits. Models.</h1>
+  </center>
+  <center>
+    <form id = 'f1' onsubmit = 'sub()'>
+      <h1 style = 'color: white'>--SIGN UP NOW for our newsletter--<br>By entering your E-mail address below, you'll get exclusive discounts, deals, and more!!</h1>
+      <input type = 'email' name = 'Your e-mail address' value = 'example@example.com' style = 'color: grey; height: 7%; width: 40%; font-size: 20pt' id = 'EmailAddress' onmousedown = 'Blankify("EmailAddress")'></input>
+      <br><br>
+      <input type = 'submit' value = 'Sign me up!' style = 'background-color: 003d06; height: 7%; width: 20%; font-size: 150%; color: white'></input>
+    </form>
+    <script>
+    function sub(){
+      var txtBlank;
+      txtBlank = document.getElementById('EmailAddress').value;
+      if (txtBlank == 'example@example.com'){
+        alert('E-mail field left blank');
+      }
+      var end = txtBlank.length();
+      var atNum = 0;
+      for(position = 0; start < end; start++){
+        var txt = document.getElementById('EmailAddress').value;
+        var char = txt.charAt(position);
+        if (char == '@'){
+          atNum += 1;
+        }
+      if (atNum >= 1){
+        alert('Thanks for signing up');
+      }
+      }
+
+
+    }
+    function Blankify(tagID){
+      var blank = document.getElementById(tagID).value = '';
+      var ntc = document.getElementById(tagID).style = 'color:  black; height: 7%; width: 40%; font-size: 20pt';
+    }
+    function holdPose(){
+      var response = document.getElementById('homePage').style = 'background-image: url(rocket1.jpg); background-size: 100%';
+    }
+    </script>
+  </center>
+</body>
 </html>
